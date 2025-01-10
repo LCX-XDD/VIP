@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCX</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <!-- 系统主标题 -->
+    <h1 class="main-title">LCX</h1>
+
+    <!-- 雪花容器 -->
+    <div class="snowflakes" id="snowflakes"></div>
+
+    <div class="form-container">
+        <!-- 自定义弹窗容器 -->
+        <div id="customAlert" class="custom-alert">
+            <span class="custom-alert-icon"></span>
+            <span class="custom-alert-message"></span>
+        </div>
+
+        <!-- 登录表单 -->
+        <div class="form-section active" id="loginForm">
+            <h2 class="form-title">用户登录</h2>
+            <form id="loginFormElement">
+                <div class="form-group">
+                    <label for="login-username">用户名</label>
+                    <input type="text" id="login-username" name="username" placeholder="请输入用户名">
+                </div>
+                <div class="form-group">
+                    <label for="login-email">邮箱</label>
+                    <input type="email" id="login-email" name="email" placeholder="请输入邮箱">
+                </div>
+                <div class="form-group">
+                    <label for="login-password">密码</label>
+                    <input type="password" id="login-password" name="password" placeholder="请输入密码" required>
+                </div>
+                <div class="login-tip">用户名和邮箱至少填写一项</div>
+                <button type="submit" class="submit-btn">登录</button>
+                <div class="form-links">
+                    <a href="#" onclick="switchForm('registerForm')">注册账号</a>
+                    <a href="#" onclick="switchForm('forgotForm')">忘记密码</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- 注册表单 -->
+        <div class="form-section" id="registerForm">
+            <h2 class="form-title">用户注册</h2>
+            <form id="registerFormElement">
+                <div class="form-group">
+                    <label for="register-username">用户名</label>
+                    <input type="text" id="register-username" name="username" placeholder="请输入用户名" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">邮箱</label>
+                    <input type="email" id="register-email" name="email" placeholder="请输入邮箱" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">密码</label>
+                    <input type="password" id="register-password" name="password" placeholder="请输入密码" required>
+                    <div class="password-strength" id="registerPasswordStrength"></div>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm">确认密码</label>
+                    <input type="password" id="register-confirm" name="confirm_password" placeholder="请再次输入密码" required>
+                    <div class="password-match" id="registerPasswordMatch"></div>
+                </div>
+                <button type="submit" class="submit-btn">注册</button>
+                <div class="form-links">
+                    <a href="#" onclick="switchForm('loginForm')">返回登录</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- 忘记密码表单 -->
+        <div class="form-section" id="forgotForm">
+            <h2 class="form-title">重置密码</h2>
+            <form id="forgotFormElement">
+                <div class="form-group">
+                    <label for="forgot-email">邮箱地址</label>
+                    <input type="email" id="forgot-email" name="email" placeholder="请输入注册邮箱" required>
+                </div>
+                <div class="form-group">
+                    <label for="forgot-new-password">新密码</label>
+                    <input type="password" id="forgot-new-password" name="new_password" placeholder="请输入新密码" required>
+                    <div class="password-strength" id="forgotPasswordStrength"></div>
+                </div>
+                <div class="form-group">
+                    <label for="forgot-confirm">确认密码</label>
+                    <input type="password" id="forgot-confirm" name="confirm_password" placeholder="请再次输入新密码" required>
+                    <div class="password-match" id="forgotPasswordMatch"></div>
+                </div>
+                <button type="submit" class="submit-btn">重置密码</button>
+                <div class="form-links">
+                    <a href="#" onclick="switchForm('loginForm')">返回登录</a>
+                </div>
+            </form>
+        </div>
+
+
+        <!-- 添加用户表单 -->
+        <div id="addUserForm" class="modal-form">
+            <div class="modal-content">
+                <h3>添加新用户</h3>
+                <div class="form-group">
+                    <label for="newUsername">用户名</label>
+                    <input type="text" id="newUsername" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="newPassword">密码</label>
+                    <input type="password" id="newPassword" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="newEmail">邮箱</label>
+                    <input type="email" id="newEmail" name="email" required>
+                </div>
+                <div class="form-buttons">
+                    <button type="button" class="cancel-btn" onclick="closeAddUserForm()">取消</button>
+                    <button type="button" class="submit-btn" onclick="submitAddUser()">添加</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <!-- 引入JavaScript文件 -->
+    <script src="js/ui.js" type="module"></script>
+    <script src="js/api.js" type="module"></script>
+    <script src="js/validation.js" type="module"></script>
+    <script src="js/effects.js" type="module"></script>
+    <script src="js/handlers.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
+
+    <script>
+    function testRedirect() {
+        const currentPath = window.location.pathname;
+        const basePath = currentPath.substring(0, currentPath.lastIndexOf('/'));
+        const userPageUrl = `${basePath}/user.html`;
+        console.log('测试跳转到:', userPageUrl);
+        window.location.href = userPageUrl;
+    }
+    </script>
+</body>
+</html> 
