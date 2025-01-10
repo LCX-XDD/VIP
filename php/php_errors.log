@@ -1,0 +1,41 @@
+[30-Dec-2024 18:35:40 Europe/Berlin] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[30-Dec-2024 18:36:58 Europe/Berlin] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[30-Dec-2024 18:42:31 Europe/Berlin] Uncaught Exception: Call to undefined function getDBConnection()
+[30-Dec-2024 18:42:44 Europe/Berlin] Uncaught Exception: Call to undefined function getDBConnection()
+[30-Dec-2024 19:02:29 Europe/Berlin] Uncaught Exception: Call to undefined function getDBConnection()
+[31-Dec-2024 02:39:24 Europe/Berlin] PHP Error: [2] require_once(functions.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\student\php\forgot.php on line 5
+[31-Dec-2024 02:39:24 Europe/Berlin] Uncaught Exception: require_once(functions.php): Failed to open stream: No such file or directory
+[31-Dec-2024 02:40:26 Europe/Berlin] PHP Error: [2] require_once(functions.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\student\php\forgot.php on line 5
+[31-Dec-2024 02:40:26 Europe/Berlin] Uncaught Exception: require_once(functions.php): Failed to open stream: No such file or directory
+[31-Dec-2024 02:41:53 Europe/Berlin] PHP Error: [2] require_once(functions.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\student\php\forgot.php on line 10
+[31-Dec-2024 02:41:53 Europe/Berlin] Uncaught Exception: require_once(functions.php): Failed to open stream: No such file or directory
+[31-Dec-2024 02:42:50 Europe/Berlin] PHP Error: [2] require_once(functions.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\student\php\forgot.php on line 10
+[31-Dec-2024 02:42:50 Europe/Berlin] Uncaught Exception: require_once(functions.php): Failed to open stream: No such file or directory
+[31-Dec-2024 02:44:03 Europe/Berlin] PHP Error: [2] require_once(functions.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\student\php\forgot.php on line 10
+[31-Dec-2024 02:44:03 Europe/Berlin] Uncaught Exception: require_once(functions.php): Failed to open stream: No such file or directory
+[31-Dec-2024 02:47:13 Europe/Berlin] Received data: {"email":"cs@qq.com","new_password":"admin123","confirm_password":"admin123"}
+[31-Dec-2024 02:47:13 Europe/Berlin] Processing: email=cs@qq.com
+[31-Dec-2024 02:47:13 Europe/Berlin] General error in forgot.php: 新密码不能与当前密码相同
+[31-Dec-2024 02:47:20 Europe/Berlin] Received data: {"email":"cs@qq.com","new_password":"admin","confirm_password":"admin"}
+[31-Dec-2024 02:47:20 Europe/Berlin] Processing: email=cs@qq.com
+[31-Dec-2024 02:47:20 Europe/Berlin] General error in forgot.php: 密码长度必须在6-20位之间
+[31-Dec-2024 02:47:25 Europe/Berlin] Received data: {"email":"cs@qq.com","new_password":"admin12","confirm_password":"admin12"}
+[31-Dec-2024 02:47:25 Europe/Berlin] Processing: email=cs@qq.com
+[31-Dec-2024 02:47:34 Europe/Berlin] Received data: {"email":"cs@qq.com","new_password":"admin12","confirm_password":"admin12"}
+[31-Dec-2024 02:47:34 Europe/Berlin] Processing: email=cs@qq.com
+[31-Dec-2024 02:47:34 Europe/Berlin] General error in forgot.php: 新密码不能与当前密码相同
+[31-Dec-2024 02:47:38 Europe/Berlin] Received data: {"email":"cs@qq.com","new_password":"admin123","confirm_password":"admin123"}
+[31-Dec-2024 02:47:38 Europe/Berlin] Processing: email=cs@qq.com
+[31-Dec-2024 03:00:24 Europe/Berlin] Received data: {"email":"cs@qq.com","new_password":"admin123","confirm_password":"admin123"}
+[31-Dec-2024 03:00:24 Europe/Berlin] Processing: email=cs@qq.com
+[31-Dec-2024 03:00:24 Europe/Berlin] General error in forgot.php: 新密码不能与当前密码相同
+[31-Dec-2024 03:06:03 Europe/Berlin] Uncaught Exception: Call to undefined function getDBConnection()
+[31-Dec-2024 03:37:49 Europe/Berlin] Uncaught Exception: Call to undefined function getDBConnection()
+[01-Jan-2025 07:12:10 Europe/Berlin] Uncaught Exception: Call to undefined function getDBConnection()
+[01-Jan-2025 07:12:18 Europe/Berlin] Uncaught Exception: Call to undefined function getDBConnection()
+[01-Jan-2025 07:12:18 Europe/Berlin] Uncaught Exception: Call to undefined function getDBConnection()
+[01-Jan-2025 07:12:25 Europe/Berlin] Uncaught Exception: Call to undefined function getDBConnection()
+[07-Jan-2025 10:44:51 Europe/Berlin] Received data: {"email":"3060229972@qq.com","new_password":"xswllcx","confirm_password":"xswllcx"}
+[07-Jan-2025 10:44:51 Europe/Berlin] Processing: email=3060229972@qq.com
+[10-Jan-2025 12:39:15 Europe/Berlin] Uncaught Exception: Call to undefined function getDBConnection()
+[10-Jan-2025 12:41:22 Europe/Berlin] Uncaught Exception: Call to undefined function getDBConnection()

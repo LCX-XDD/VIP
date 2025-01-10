@@ -1,0 +1,25 @@
+[30-Dec-2024 18:16:46 Europe/Berlin] PHP Warning:  require_once(db_config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\student\php\reset_password.php on line 10
+[30-Dec-2024 18:16:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'db_config.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\student\php\reset_password.php:10
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\student\php\reset_password.php on line 10
+[30-Dec-2024 18:26:41 Europe/Berlin] PHP Warning:  require_once(db_config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\student\php\reset_password.php on line 10
+[30-Dec-2024 18:26:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'db_config.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\student\php\reset_password.php:10
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\student\php\reset_password.php on line 10
+[30-Dec-2024 18:26:53 Europe/Berlin] PHP Warning:  require_once(db_config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\student\php\reset_password.php on line 10
+[30-Dec-2024 18:26:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'db_config.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\student\php\reset_password.php:10
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\student\php\reset_password.php on line 10
+[30-Dec-2024 18:28:02 Europe/Berlin] PHP Warning:  require_once(db_config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\student\php\reset_password.php on line 10
+[30-Dec-2024 18:28:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'db_config.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\student\php\reset_password.php:10
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\student\php\reset_password.php on line 10
+[30-Dec-2024 18:29:18 Europe/Berlin] PHP Warning:  require_once(db_config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\student\php\reset_password.php on line 10
+[30-Dec-2024 18:29:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'db_config.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\student\php\reset_password.php:10
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\student\php\reset_password.php on line 10
