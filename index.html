@@ -25,7 +25,7 @@
         <!-- 登录表单 -->
         <div class="form-section active" id="loginForm">
             <h2 class="form-title">用户登录</h2>
-            <form id="loginFormElement">
+            <form id="loginFormElement" onsubmit="loginUser(); return false;">
                 <div class="form-group">
                     <label for="login-username">用户名</label>
                     <input type="text" id="login-username" name="username" placeholder="请输入用户名">
@@ -50,7 +50,7 @@
         <!-- 注册表单 -->
         <div class="form-section" id="registerForm">
             <h2 class="form-title">用户注册</h2>
-            <form id="registerFormElement">
+            <form id="registerFormElement" onsubmit="registerUser(); return false;">
                 <div class="form-group">
                     <label for="register-username">用户名</label>
                     <input type="text" id="register-username" name="username" placeholder="请输入用户名" required>
