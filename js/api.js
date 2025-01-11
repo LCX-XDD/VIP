@@ -1,5 +1,5 @@
 // API 基础 URL
-const API_BASE_URL = 'php';
+const API_BASE_URL = 'http://localhost/VIP/php';
 
 // 通用请求函数
 async function request(endpoint, method = 'POST', data = null) {
