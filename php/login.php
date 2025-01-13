@@ -6,6 +6,19 @@ ini_set('display_errors', 0);
 header('Content-Type: application/json; charset=utf-8');
 require_once 'db_connect.php';
 
+$method = $_SERVER['REQUEST_METHOD'];
+
+if ($method === 'POST') {
+    // 处理POST请求
+    // ... existing POST handling code ...
+} elseif ($method === 'GET') {
+    // 处理GET请求
+    // 您可以在这里添加GET请求的处理逻辑
+    echo json_encode(['status' => 'success', 'message' => 'GET请求成功']);
+} else {
+    echo json_encode(['status' => 'error', 'message' => '不支持的请求方法']);
+}
+
 try {
     // 获取POST数据
     $input = file_get_contents('php://input');

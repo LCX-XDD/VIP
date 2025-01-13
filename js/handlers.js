@@ -54,7 +54,7 @@ async function handleLogin(event) {
 
     try {
         const response = await fetch('php/login.php', {
-            method: 'POST',
+            method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
             },
